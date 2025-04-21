@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0042a2c0d44878dd6aba4745074dba19 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0042a2c0d44878dd6aba4745074dba19" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0042a2c0d44878dd6aba4745074dba19 = L.map(
+                "map_0042a2c0d44878dd6aba4745074dba19",
+                {
+                    center: [22.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a1075b7d012566bdfd74ab490e02964b = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a1075b7d012566bdfd74ab490e02964b.addTo(map_0042a2c0d44878dd6aba4745074dba19);
+        
+    
+            var marker_cluster_9b7c3cbc1572535a7c50faf621341ae7 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_c7a518557a596ebe238077fb553c61f4 = L.circleMarker(
+                [21.1702, 72.8311],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_9b7c3cbc1572535a7c50faf621341ae7);
+        
+    
+            circle_marker_c7a518557a596ebe238077fb553c61f4.bindTooltip(
+                `<div>
+                     <b>Most Profitable</b><br>Product: Samsung Galaxy S4 Active<br>City: Surat, Gujarat<br>Profit: 909.9818000000002<br>Cluster: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c7223ceb260746e127a3921f673d9f9 = L.circleMarker(
+                [22.5726, 88.3639],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_9b7c3cbc1572535a7c50faf621341ae7);
+        
+    
+            circle_marker_7c7223ceb260746e127a3921f673d9f9.bindTooltip(
+                `<div>
+                     <b>Least Profitable</b><br>Product: Martin Yale Chadless Opener Electric Letter Opener<br>City: Kolkata, West Bengal<br>Profit: -1049.3406<br>Cluster: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b30c3021923b773531a58993d722198 = L.circleMarker(
+                [17.385, 78.4867],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_9b7c3cbc1572535a7c50faf621341ae7);
+        
+    
+            circle_marker_2b30c3021923b773531a58993d722198.bindTooltip(
+                `<div>
+                     <b>Most Profitable</b><br>Product: Polycom SoundStation2 EX Conference phone<br>City: Hyderabad, Telangana<br>Profit: 352.30649999999997<br>Cluster: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ea2f5d7467e149e3d9eb3f123d6f778 = L.circleMarker(
+                [22.5937, 78.9629],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_9b7c3cbc1572535a7c50faf621341ae7);
+        
+    
+            circle_marker_3ea2f5d7467e149e3d9eb3f123d6f778.bindTooltip(
+                `<div>
+                     <b>Least Profitable</b><br>Product: Martin Yale Chadless Opener Electric Letter Opener<br>City: Vadodara, Gujarat<br>Profit: -299.8116<br>Cluster: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c6aaed07a37b28afef8e922b4546267 = L.circleMarker(
+                [26.4499, 80.3319],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_9b7c3cbc1572535a7c50faf621341ae7);
+        
+    
+            circle_marker_7c6aaed07a37b28afef8e922b4546267.bindTooltip(
+                `<div>
+                     <b>Most Profitable</b><br>Product: Canon imageCLASS 2200 Advanced Copier<br>City: Kanpur, Uttar Pradesh<br>Profit: 8399.975999999999<br>Cluster: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3db5c589c1d6dbae3026c926840ab1f9 = L.circleMarker(
+                [19.076, 72.8777],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_9b7c3cbc1572535a7c50faf621341ae7);
+        
+    
+            circle_marker_3db5c589c1d6dbae3026c926840ab1f9.bindTooltip(
+                `<div>
+                     <b>Least Profitable</b><br>Product: High Speed Automatic Electric Letter Opener<br>City: Mumbai, Maharashtra<br>Profit: 327.50599999999963<br>Cluster: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_511caf9a22a2a2a6b663c3a00ef560cc = L.circleMarker(
+                [22.573600000000003, 88.3629],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_9b7c3cbc1572535a7c50faf621341ae7);
+        
+    
+            circle_marker_511caf9a22a2a2a6b663c3a00ef560cc.bindTooltip(
+                `<div>
+                     <b>Most Profitable</b><br>Product: Motorla HX550 Universal Bluetooth Headset<br>City: Kolkata, West Bengal<br>Profit: 19.775000000000006<br>Cluster: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2bb960e22cb3a4908802e190dd5254bd = L.circleMarker(
+                [12.9716, 77.5946],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_9b7c3cbc1572535a7c50faf621341ae7);
+        
+    
+            circle_marker_2bb960e22cb3a4908802e190dd5254bd.bindTooltip(
+                `<div>
+                     <b>Least Profitable</b><br>Product: GBC DocuBind P400 Electric Binding System<br>City: Bengaluru, Karnataka<br>Profit: -3701.8928000000014<br>Cluster: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_9b7c3cbc1572535a7c50faf621341ae7.addTo(map_0042a2c0d44878dd6aba4745074dba19);
+        
+</script>
+</html>

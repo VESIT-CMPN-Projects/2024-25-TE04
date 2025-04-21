@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_09a0f0253bc23965139a755fae39e9a7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_09a0f0253bc23965139a755fae39e9a7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_09a0f0253bc23965139a755fae39e9a7 = L.map(
+                "map_09a0f0253bc23965139a755fae39e9a7",
+                {
+                    center: [22.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fe23213862da879edd2543352ceff36d = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fe23213862da879edd2543352ceff36d.addTo(map_09a0f0253bc23965139a755fae39e9a7);
+        
+    
+            var marker_cluster_e124c16599db0464cec521328274aa42 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_8307853b03439c42a2d991f7f872d649 = L.circleMarker(
+                [22.5726, 88.3639],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e124c16599db0464cec521328274aa42);
+        
+    
+            circle_marker_8307853b03439c42a2d991f7f872d649.bindTooltip(
+                `<div>
+                     <b>Most Sold</b><br>Product: HON 5400 Series Task Chairs for Big and Tall<br>City: Kolkata, West Bengal<br>Sales: 4416.174<br>Cluster: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ca6c30bcb59dc520a10a5692587d3cf8 = L.circleMarker(
+                [12.9716, 77.5946],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e124c16599db0464cec521328274aa42);
+        
+    
+            circle_marker_ca6c30bcb59dc520a10a5692587d3cf8.bindTooltip(
+                `<div>
+                     <b>Least Sold</b><br>Product: OIC Thumb-Tacks<br>City: Bengaluru, Karnataka<br>Sales: 5.4719999999999995<br>Cluster: 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae4a9b0db00c5a9aefece960fda1ba12 = L.circleMarker(
+                [19.076, 72.8777],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e124c16599db0464cec521328274aa42);
+        
+    
+            circle_marker_ae4a9b0db00c5a9aefece960fda1ba12.bindTooltip(
+                `<div>
+                     <b>Most Sold</b><br>Product: ClearOne CHATAttach 160 - speaker phone<br>City: Mumbai, Maharashtra<br>Sales: 1487.976<br>Cluster: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ca8e46e4bfd21b0590a67135876b755 = L.circleMarker(
+                [17.385, 78.4867],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e124c16599db0464cec521328274aa42);
+        
+    
+            circle_marker_0ca8e46e4bfd21b0590a67135876b755.bindTooltip(
+                `<div>
+                     <b>Least Sold</b><br>Product: OIC Binder Clips, Mini, 1/4" Capacity, Black<br>City: Hyderabad, Telangana<br>Sales: 1.24<br>Cluster: 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_061e0827c826795c803a18a9c9761adc = L.circleMarker(
+                [26.4499, 80.3319],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e124c16599db0464cec521328274aa42);
+        
+    
+            circle_marker_061e0827c826795c803a18a9c9761adc.bindTooltip(
+                `<div>
+                     <b>Most Sold</b><br>Product: Canon imageCLASS 2200 Advanced Copier<br>City: Kanpur, Uttar Pradesh<br>Sales: 17499.949999999997<br>Cluster: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_940607d9397165f3371e955ada4a3a01 = L.circleMarker(
+                [17.386000000000003, 78.4857],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e124c16599db0464cec521328274aa42);
+        
+    
+            circle_marker_940607d9397165f3371e955ada4a3a01.bindTooltip(
+                `<div>
+                     <b>Least Sold</b><br>Product: Apple iPhone 5<br>City: Hyderabad, Telangana<br>Sales: 4548.81<br>Cluster: 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_987b462016212a6a153c6164a79ed3dd = L.circleMarker(
+                [22.5937, 78.9629],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e124c16599db0464cec521328274aa42);
+        
+    
+            circle_marker_987b462016212a6a153c6164a79ed3dd.bindTooltip(
+                `<div>
+                     <b>Most Sold</b><br>Product: Chromcraft Bull-Nose Wood Oval Conference Tables & Bases<br>City: Udaipur, Rajasthan<br>Sales: 2314.116<br>Cluster: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f486c39da378139243300982b6138a2e = L.circleMarker(
+                [12.9726, 77.5936],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e124c16599db0464cec521328274aa42);
+        
+    
+            circle_marker_f486c39da378139243300982b6138a2e.bindTooltip(
+                `<div>
+                     <b>Least Sold</b><br>Product: Hoover Replacement Belt for Commercial Guardsman Heavy-Duty Upright Vacuum<br>City: Bengaluru, Karnataka<br>Sales: 0.44399999999999995<br>Cluster: 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_e124c16599db0464cec521328274aa42.addTo(map_09a0f0253bc23965139a755fae39e9a7);
+        
+</script>
+</html>
